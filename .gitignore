@@ -3,6 +3,10 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+## 
+!res/*
+##
+
 # User-specific files
 *.rsuser
 *.suo
@@ -27,6 +31,7 @@ x86/
 [Aa][Rr][Mm]64/
 bld/
 [Bb]in/
+
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
