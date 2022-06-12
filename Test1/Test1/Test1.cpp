@@ -59,7 +59,7 @@ public:
 
 	Val_t Func() const { return str; }
 };
-
+#include <algorithm>
 struct MemoryLayout
 {
 
@@ -67,12 +67,17 @@ struct MemoryLayout
 struct Null {};
 
 struct B {};
-struct D : B {};
+struct D1 : public  B {};
+struct D2 : private B {};
 
-template<typename Container>
-concept IsVector = std::same_as<Container, std::vector<typename(Container::value_type)>>;
+
 
 int main()
 {
-	
+	std::priority_queue<int> pq;
+	pq.emplace(2);
+	pq.emplace(1);
+	pq.emplace(4);
+	pq.emplace(3);
+	std::cout << pq.top();
 }

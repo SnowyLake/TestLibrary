@@ -1,5 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
+#include <optional>
+#include <ranges>
+
+
 int main()
 {
-    std::cout << "2333";
+	std::cout << sizeof(long);
 }
